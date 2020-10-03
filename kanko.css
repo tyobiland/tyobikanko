@@ -1,0 +1,396 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*　ホーム画像の表示エリア　====== */
+.home-slide {
+  position: relative;
+  overflow: hidden;
+  /* 画像のサイズを合わせる ====== */
+  width: 100%;
+  height: 800px;
+  margin: auto;
+}
+
+/* 画像の設定 ======= */
+.home-slide img {
+  position: absolute;
+  /*　画像のサイズを表示エリアに合わせる ====== */
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: slideAnime 15s ease infinite;
+}
+
+
+.home-silde img:nth-of-type(1){ animation-delay: 0s }
+.home-slide img:nth-of-type(2){ animation-delay: 3s }
+.home-slide img:nth-of-type(3){ animation-delay: 6s }
+.home-slide img:nth-of-type(4){ animation-delay: 9s }
+.home-slide img:nth-of-type(5){ animation-delay: 12s }
+
+@keyframes  slideAnime {
+  0% { opacity: 0 }
+  2% { opacity: 1 }
+  18% { opacity: 1 }
+  20% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+.home-text {
+  position: absolute;
+  top: 18%;
+  right: 40%;
+  left: 40%;
+  width: auto;
+}
+
+.top-wrapper {
+  padding: 4% 0;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.top-wrapper h2 {
+  font-weight: normal;
+}
+
+.top-wrapper-text {
+  font-size: 30px;
+  line-height: 65px;
+  letter-spacing: 16px;
+}
+
+.top-wrapper p {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 6px;
+  padding-bottom: 80px;
+}
+
+
+/* 春の内容 ======= */
+.spring-wrapper {
+  text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.spring-wrapper img {
+  width: 85%;
+}
+
+.spring-wrapper a {
+  display: block;
+  position: absolute;
+  right: 10%;
+  bottom: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.spring-wrapper p {
+  font-size: 25px;
+  padding: 0 10px;
+  color: white;
+}
+
+.spring-wrapper h5 {
+
+}
+
+.spring-wrapper a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+/* 夏の内容 ======= */
+.summer-wrapper {
+  text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.summer-wrapper img {
+  width: 85%;
+  position: relative;
+}
+
+.summer-wrapper a {
+  display: block;
+  position: absolute;
+  left: 10%;
+  bottom: 250px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.summer-wrapper p {
+  font-size: 25px;
+  padding: 0 10px;
+  color: white;
+}
+
+.summer-wrapper a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+/* 秋の内容 ======= */
+.autumn-wrapper {
+  text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.autumn-wrapper img {
+  width: 85%;
+  position: relative;
+}
+
+.autumn-wrapper a {
+  display: block;
+  position: absolute;
+  right: 10%;
+  bottom: 240px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.autumn-wrapper p {
+  font-size: 25px;
+  padding: 0 10px;
+  color: white;
+}
+
+.autumn-wrapper a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+
+/* 冬の内容 ====== */
+.winter-wrapper {
+  text-align: center;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.winter-wrapper img {
+  width: 85%;
+  position: relative;
+}
+
+.winter-wrapper a {
+  display: block;
+  position: absolute;
+  left: 10%;
+  bottom: 240px;
+  background-color: rgba(0, 0, 0, 0.7);
+  line-height: 1px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.winter-wrapper p {
+  font-size: 25px;
+  padding: 0 10px;
+  color: white;
+}
+
+.winter-wrapper a:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+
+footer {
+  background-color: rgba(194, 198, 201, 0.8);
+}
+
+.footer-wrapper {
+  text-align: center;
+  display: flex;
+  float: none;
+  padding: 0 80px;
+}
+
+.footer-wrapper a {
+  width: 25%;
+  text-decoration: none;
+}
+
+.footer-wrapper p {
+  font-size: 22px;
+  color: black;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 150px;
+  padding: 60px 0 100px 0;
+}
+
+.last-wrapper {
+  color: white;
+  opacity: 0.7;
+}
+
+.last-wrapper p {
+  font-size: 20px;
+  padding: 0 0 0 10px;
+}
+
+
+@media(max-width: 1000px) {
+  .home-slide {
+    height: 600px;
+    margin: auto;
+  }
+
+  .home-text {
+    top: 15%;
+    right: 45%;
+    left: 40%;
+  }
+
+  .home-text img {
+    width: 150px;
+    text-align: center;
+  }
+
+  .top-wrapper {
+    padding: 1% 0;
+  }
+
+  .spring-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .spring-wrapper a p {
+    display: none;
+  }
+
+  .summer-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .summer-wrapper a p {
+    display: none;
+  }
+
+  .autumn-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .autumn-wrapper a p {
+    display: none;
+  }
+
+  .winter-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .winter-wrapper a p {
+    display: none;
+  }
+
+  .footer-wrapper p {
+    font-size: 16px;
+    color: black;
+  }
+
+}
+
+
+@media(max-width: 670px) {
+  .home-slide {
+    height: 350px;
+    margin: auto;
+  }
+
+  .home-text {
+    top: 8%;
+    right: 45%;
+    left: 35%;
+  }
+
+  .home-text img {
+    width: 150px;
+    text-align: center;
+  }
+
+  .spring-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .spring-wrapper a p {
+    display: none;
+  }
+
+  .summer-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .summer-wrapper a p {
+    display: none;
+  }
+
+  .autumn-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .autumn-wrapper a p {
+    display: none;
+  }
+
+  .winter-wrapper {
+    padding-bottom: 100px;
+  }
+
+  .winter-wrapper a p {
+    display: none;
+  }
+
+  .media-footer {
+    display: flex;
+  }
+
+  .footer-wrapper {
+    padding-top: 30px;
+    display: block;
+  　flex-direction: column;
+  }
+
+  .footer-wrapper p {
+    font-size: 20px;
+    opacity: 0.6;
+  }
+
+  .footer-logo img {
+    width: 150px;
+    padding-bottom: 35px;
+  }
+
+  .last-wrapper p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
